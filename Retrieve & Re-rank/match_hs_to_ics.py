@@ -303,7 +303,7 @@ def run_ultimate_matching():
     print(f"💾 正在保存为 Excel 文件: {OUTPUT_FILE} ...")
     try:
         df_res.to_excel(OUTPUT_FILE, index=False, engine='openpyxl')
-        print(f"\n✅ 究极匹配完成！主人喵，请查看文件: {OUTPUT_FILE}")
+        print(f"\n✅ 匹配完成喵，请查看文件: {OUTPUT_FILE}")
     except Exception as e:
         print(f"⚠️ 保存 Excel 失败 ({e})，尝试保存 CSV...")
         csv_backup = OUTPUT_FILE.replace('.xlsx', '_backup.csv')
